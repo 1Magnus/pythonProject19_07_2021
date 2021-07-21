@@ -10,7 +10,11 @@ print('Введите координаты второй точки: ')
 x2 = int(input("x2 = "))
 y2 = int(input("y2 = "))
 
+try:
+    k = (y1 - y2) / (x1 - x2)
+except ZeroDivisionError:
+    k = 1
 
-k = (y1 - y2) / (x1 - x2)
+
 b = y2 - k * x2
 print(f'Уравнение прямой проходящей через эти точки выглядит так y = {k}x + {b}')
