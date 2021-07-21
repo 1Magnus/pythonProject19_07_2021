@@ -13,7 +13,7 @@ y2 = int(input("y2 = "))
 try:
     k = (y1 - y2) / (x1 - x2)
 except ZeroDivisionError:
-    k = 1
+    k = 0
 
 
 b = y2 - k * x2
