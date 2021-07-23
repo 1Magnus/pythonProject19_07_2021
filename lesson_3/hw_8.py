@@ -16,3 +16,4 @@ for str in range(4):
 for i in range(4):
     print(a[i])
 
+print(a)
