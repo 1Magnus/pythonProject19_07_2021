@@ -10,7 +10,7 @@ for i in range(N):
     a[i] = random.randint(0, 99)
 print(a)
 
-print(f'Индекс максимального элемента - {a.index(max(a))}, минимального -{a.index(min(a))}')
+print(f'Индекс максимального элемента - {a.index(max(a))}, минимального - {a.index(min(a))}')
 
 b = []
 if a.index(max(a)) > a.index(min(a)):

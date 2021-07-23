@@ -5,15 +5,14 @@
 
 
 a=[]
-for str in range(4):
+for str in range(5):
     b = []
-    for row in range(4):
+    for row in range(3):
         b.append(int(input(f'Введите элемент - {str + 1}x{row + 1}: ')))
 
     b.append(sum(b))
     a.append(b)
 
-for i in range(4):
+for i in range(5):
     print(a[i])
 
-print(a)

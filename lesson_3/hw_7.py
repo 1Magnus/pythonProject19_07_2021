@@ -18,5 +18,5 @@ for i in range(len(a)):
         a_min_2 = a[i]
 
 
-print(a_min_1, a_min_2)
+print(f'Два минимальных числа равны - {a_min_1}, {a_min_2}')
 

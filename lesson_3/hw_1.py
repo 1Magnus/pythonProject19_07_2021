@@ -7,4 +7,4 @@ for i in range(2, 100):
             a[j] += 1
 for i in range(len(a)):
     if a[i] != 0:
-        print(f'На число {i} деляться {a[i]}')
+        print(f'На число {i} деляться {a[i]} числа')

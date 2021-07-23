@@ -4,13 +4,13 @@ import random
 
 N = 10
 a = [0] * N
-c_max = c_min = 0
 for i in range(N):
     a[i] = random.randint(1, 99)
 print(a)
 
 
 # v1
+c_max = c_min = 0
 for i in range(N):
     if a[i] > a[c_max]:
         c_max = i
