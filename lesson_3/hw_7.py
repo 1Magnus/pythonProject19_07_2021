@@ -3,20 +3,28 @@
 
 import random
 
-N = 10
-a = [0] * N
-c_max = c_min = 0
-for i in range(N):
-    a[i] = random.randint(0, 99)
-print(a)
 
-a_min_2 = max(a)
-a_min_1 = min(a)
-
-for i in range(len(a)):
-    if a[i] <= a_min_2 and i != a.index(a_min_1):
-        a_min_2 = a[i]
+def rand_mass(N):
+    a = [0] * N
+    for i in range(N):
+        a[i] = random.randint(1, 99)
+    return a
 
 
-print(f'Два минимальных числа равны - {a_min_1}, {a_min_2}')
+def main():
+    N = 10
+    a = rand_mass(N)
+    print(a, 'Оригинал')
 
+    a_min_2 = max(a)
+    a_min_1 = min(a)
+
+    for i in range(len(a)):
+        if a[i] <= a_min_2 and i != a.index(a_min_1):
+            a_min_2 = a[i]
+
+    print(f'Два минимальных числа равны - {a_min_1}, {a_min_2}')
+
+
+if __name__ == '__main__':
+    main()

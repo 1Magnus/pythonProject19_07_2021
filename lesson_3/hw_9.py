@@ -1,5 +1,6 @@
 # Найти максимальный элемент среди минимальных элементов столбцов матрицы
 import random
+
 random.seed(7)
 
 N = 5
@@ -9,7 +10,6 @@ for str in range(N):
     for row in range(N):
         b.append(random.randint(0, 99))
     a.append(b)
-
 
 for i in range(N):
     print(a[i])
@@ -26,5 +26,3 @@ for row in range(N):
 
 # print('*' * 20)
 print(f'{d} - Минимальные элементы столбцов, из них максимальный {max(d)}')
-
-
