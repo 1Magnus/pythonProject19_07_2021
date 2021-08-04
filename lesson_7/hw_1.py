@@ -17,7 +17,7 @@ def sort_bubble(list):
 
 def main():
     n = 20
-    a = [random.randint(-100, 100) for _ in range(n)]
+    a = [random.randint(-100, 99) for _ in range(n)]
     print(a, ' - оригинал')
     print(sort_bubble(a), ' - отсортированный')
 
