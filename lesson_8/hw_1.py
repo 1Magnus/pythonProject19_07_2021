@@ -29,7 +29,6 @@ def get_uni(list1):
 
 def main():
     s = 'koka'
-
     print(get_slice(s), '- все возможные комбинации')
     print(get_uni(get_slice(s)), '- уникальные комбинации')
 
